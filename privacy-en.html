@@ -3,499 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Subsly</title>
+    <title>Privacy Policy - SubsFly</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.7;
-            color: #1a1a1a;
-            background: #ffffff;
-            overflow-x: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #FF3366, #FF6B9D, #00D4FF, #00F5A0, #D946EF);
-            background-size: 200% 200%;
-            animation: gradientShift 10s ease infinite;
-            padding: 80px 20px 40px;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-        
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        .logo-text {
-            font-size: 48px;
-            font-weight: 900;
-            color: #ffffff;
-            letter-spacing: -2px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        
-        .subtitle {
-            font-size: 18px;
-            color: rgba(255,255,255,0.95);
-            font-weight: 500;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #ffffff;
-        }
-        
-        .metadata-card {
-            background: linear-gradient(135deg, #f8f9ff, #fff5f8);
-            border: 2px solid rgba(255,51,102,0.1);
-            border-radius: 20px;
-            padding: 25px;
-            margin: 30px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
-        
-        .metadata-card strong {
-            color: #FF3366;
-        }
-        
-        .key-summary {
-            background: linear-gradient(135deg, #FF3366, #D946EF);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 30px 0;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(255,51,102,0.2);
-        }
-        
-        .key-summary::before {
-            content: "🔒";
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 60px;
-            opacity: 0.3;
-        }
-        
-        .key-summary h3 {
-            color: #ffffff;
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-        
-        .key-summary p {
-            color: rgba(255,255,255,0.95);
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        
-        h1 {
-            font-size: 36px;
-            font-weight: 800;
-            margin: 40px 0 30px;
-            background: linear-gradient(90deg, #FF3366, #00F5A0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        h2 {
-            font-size: 28px;
-            font-weight: 700;
-            margin: 40px 0 20px;
-            color: #1a1a1a;
-            position: relative;
-            padding-left: 20px;
-        }
-        
-        h2::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(180deg, #FF3366, #00F5A0);
-            border-radius: 2px;
-        }
-        
-        h3 {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 25px 0 15px;
-            color: #00B4D8;
-        }
-        
-        p {
-            margin-bottom: 18px;
-            color: #4a4a4a;
-            font-size: 16px;
-        }
-        
-        ul {
-            margin: 20px 0;
-            padding-left: 0;
-            list-style: none;
-        }
-        
-        ul li {
-            margin: 12px 0;
-            padding-left: 35px;
-            position: relative;
-            color: #4a4a4a;
-            font-size: 16px;
-        }
-        
-        ul li::before {
-            content: "→";
-            position: absolute;
-            left: 10px;
-            color: #00F5A0;
-            font-weight: bold;
-        }
-        
-        ul li strong {
-            color: #FF3366;
-        }
-        
-        .highlight-box {
-            background: #f8f9ff;
-            border-left: 4px solid #00F5A0;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 25px 0;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-        }
-        
-        .highlight-box strong {
-            color: #FF3366;
-            font-size: 18px;
-        }
-        
-        .contact-card {
-            background: linear-gradient(135deg, rgba(217,70,239,0.1), rgba(0,212,255,0.1));
-            border: 2px solid rgba(217,70,239,0.2);
-            border-radius: 20px;
-            padding: 30px;
-            margin: 40px 0;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        }
-        
-        .contact-card h3 {
-            color: #1a1a1a;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-        
-        .contact-card p {
-            color: #4a4a4a;
-            margin: 10px 0;
-        }
-        
-        .contact-card a {
-            color: #FF3366;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .contact-card a:hover {
-            color: #D946EF;
-            text-decoration: underline;
-        }
-        
-        .footer {
-            background: linear-gradient(135deg, #f8f9ff, #fff5f8);
-            border-radius: 20px;
-            padding: 40px;
-            margin: 60px 0 30px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
-        
-        .footer-logo {
-            font-size: 32px;
-            font-weight: 900;
-            background: linear-gradient(90deg, #FF3366, #00F5A0, #D946EF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 15px;
-        }
-        
-        .footer-tagline {
-            font-size: 18px;
-            color: #6a6a6a;
-            margin-bottom: 10px;
-        }
-        
-        .footer-copyright {
-            font-size: 14px;
-            color: #9a9a9a;
-        }
-        
-        .badge {
-            display: inline-block;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            margin: 5px;
-        }
-        
-        .badge-pink {
-            background: rgba(255,51,102,0.1);
-            color: #FF3366;
-            border: 1px solid #FF3366;
-        }
-        
-        .badge-green {
-            background: rgba(0,245,160,0.1);
-            color: #00C896;
-            border: 1px solid #00F5A0;
-        }
-        
-        .badge-blue {
-            background: rgba(0,212,255,0.1);
-            color: #00B4D8;
-            border: 1px solid #00D4FF;
-        }
-        
-        .emoji-large {
-            font-size: 24px;
-            margin-right: 8px;
-        }
-        
-        @media (max-width: 768px) {
-            .logo-text {
-                font-size: 36px;
-            }
-            
-            h1 {
-                font-size: 28px;
-            }
-            
-            h2 {
-                font-size: 22px;
-            }
-            
-            .container {
-                padding: 15px;
-            }
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.8s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .divider {
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #FF3366, #00F5A0, transparent);
-            margin: 40px 0;
-            border-radius: 2px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #1a1a1a; background: #ffffff; overflow-x: hidden; }
+        .header { background: linear-gradient(135deg, #FF3366, #FF6B9D, #00D4FF, #00F5A0, #D946EF); background-size: 200% 200%; animation: gradientShift 10s ease infinite; padding: 80px 20px 40px; text-align: center; position: relative; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        @keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .logo-text { font-size: 48px; font-weight: 900; color: #ffffff; letter-spacing: -2px; margin-bottom: 10px; text-transform: uppercase; text-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .subtitle { font-size: 18px; color: rgba(255,255,255,0.95); font-weight: 500; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; background: #ffffff; }
+        .metadata-card { background: linear-gradient(135deg, #f8f9ff, #fff5f8); border: 2px solid rgba(255,51,102,0.1); border-radius: 20px; padding: 25px; margin: 30px 0; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        .metadata-card strong { color: #FF3366; }
+        .key-summary { background: linear-gradient(135deg, #FF3366, #D946EF); border-radius: 20px; padding: 30px; margin: 30px 0; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(255,51,102,0.2); }
+        .key-summary::before { content: "🔒"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 60px; opacity: 0.3; }
+        .key-summary h3 { color: #ffffff; margin-bottom: 10px; font-size: 20px; }
+        .key-summary p { color: rgba(255,255,255,0.95); font-size: 16px; line-height: 1.6; }
+        h1 { font-size: 36px; font-weight: 800; margin: 40px 0 30px; background: linear-gradient(90deg, #FF3366, #00F5A0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        h2 { font-size: 28px; font-weight: 700; margin: 40px 0 20px; color: #1a1a1a; position: relative; padding-left: 20px; }
+        h2::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 4px; height: 100%; background: linear-gradient(180deg, #FF3366, #00F5A0); border-radius: 2px; }
+        h3 { font-size: 20px; font-weight: 600; margin: 25px 0 15px; color: #00B4D8; }
+        p { margin-bottom: 18px; color: #4a4a4a; font-size: 16px; }
+        ul { margin: 20px 0; padding-left: 0; list-style: none; }
+        ul li { margin: 12px 0; padding-left: 35px; position: relative; color: #4a4a4a; font-size: 16px; }
+        ul li::before { content: "→"; position: absolute; left: 10px; color: #00F5A0; font-weight: bold; }
+        ul li strong { color: #FF3366; }
+        .highlight-box { background: #f8f9ff; border-left: 4px solid #00F5A0; border-radius: 10px; padding: 20px; margin: 25px 0; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+        .highlight-box strong { color: #FF3366; font-size: 18px; }
+        .api-box { background: linear-gradient(135deg, rgba(0,212,255,0.05), rgba(217,70,239,0.05)); border: 2px solid rgba(0,212,255,0.2); border-radius: 15px; padding: 25px; margin: 25px 0; box-shadow: 0 3px 15px rgba(0,0,0,0.05); }
+        .api-box h3 { color: #00B4D8; margin-top: 0; }
+        .contact-card { background: linear-gradient(135deg, rgba(217,70,239,0.1), rgba(0,212,255,0.1)); border: 2px solid rgba(217,70,239,0.2); border-radius: 20px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .contact-card h3 { color: #1a1a1a; margin-bottom: 20px; font-size: 24px; }
+        .contact-card p { color: #4a4a4a; margin: 10px 0; }
+        .contact-card a { color: #FF3366; text-decoration: none; font-weight: 600; transition: all 0.3s ease; }
+        .contact-card a:hover { color: #D946EF; text-decoration: underline; }
+        .footer { background: linear-gradient(135deg, #f8f9ff, #fff5f8); border-radius: 20px; padding: 40px; margin: 60px 0 30px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        .footer-logo { font-size: 32px; font-weight: 900; background: linear-gradient(90deg, #FF3366, #00F5A0, #D946EF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 15px; }
+        .footer-tagline { font-size: 18px; color: #6a6a6a; margin-bottom: 10px; }
+        .footer-copyright { font-size: 14px; color: #9a9a9a; }
+        .badge { display: inline-block; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; margin: 5px; }
+        .badge-pink { background: rgba(255,51,102,0.1); color: #FF3366; border: 1px solid #FF3366; }
+        .badge-green { background: rgba(0,245,160,0.1); color: #00C896; border: 1px solid #00F5A0; }
+        .badge-blue { background: rgba(0,212,255,0.1); color: #00B4D8; border: 1px solid #00D4FF; }
+        .emoji-large { font-size: 24px; margin-right: 8px; }
+        code { background: rgba(0,212,255,0.1); padding: 2px 6px; border-radius: 4px; font-family: 'SF Mono', Monaco, monospace; font-size: 14px; color: #00B4D8; }
+        @media (max-width: 768px) { .logo-text { font-size: 36px; } h1 { font-size: 28px; } h2 { font-size: 22px; } .container { padding: 15px; } }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .divider { height: 2px; background: linear-gradient(90deg, transparent, #FF3366, #00F5A0, transparent); margin: 40px 0; border-radius: 2px; }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="logo-text">SUBSLY</div>
+        <div class="logo-text">SUBSFLY</div>
         <div class="subtitle">Your Subscription Manager</div>
     </div>
-    
     <div class="container fade-in">
         <h1>Privacy Policy</h1>
-        
         <div class="metadata-card">
-            <p><strong>Last Updated:</strong> September 12, 2025</p>
-            <p><strong>Version:</strong> 1.0</p>
-            <p><strong>Application:</strong> Subsly - Smart Subscription Management</p>
+            <p><strong>Last Updated:</strong> November 12, 2025</p>
+            <p><strong>Version:</strong> 2.1</p>
+            <p><strong>Application:</strong> SubsFly - Smart Subscription Management</p>
             <div style="margin-top: 15px;">
-                <span class="badge badge-pink">100% Offline</span>
+                <span class="badge badge-pink">Local Privacy</span>
                 <span class="badge badge-green">No Tracking</span>
-                <span class="badge badge-blue">AES-256 Encryption</span>
+                <span class="badge badge-blue">iOS Encryption</span>
             </div>
         </div>
-        
         <div class="key-summary">
-            <h3>💡 Key Takeaway</h3>
-            <p>Subsly works completely offline. Your data NEVER leaves your device. We don't collect, store, or share any personal information. Your privacy is our absolute priority.</p>
+            <h3>💡 Most Important</h3>
+            <p>SubsFly is designed with privacy by design: all your subscription data, categories, and notes remain exclusively stored on your device. We only make specific internet connections for features you control.</p>
         </div>
-        
         <h2>1. Introduction</h2>
-        <p>This Privacy Policy describes how Subsly ("the App", "we", "us") handles information when you use our subscription management application. Subsly is designed with complete privacy in mind: it works entirely offline and all your data remains exclusively on your device.</p>
-        
-        <p>By using Subsly, you agree to the practices described in this policy. If you disagree, we recommend not using the application.</p>
-        
+        <p>This Privacy Policy describes how SubsFly ("the Application", "we") manages information when you use our subscription management application.</p>
+        <p>By using SubsFly, you accept the practices described in this policy. If you disagree, we recommend not using the application.</p>
         <div class="divider"></div>
-        
         <h2>2. Data Controller</h2>
         <div class="highlight-box">
             <p><strong>Controller:</strong> Jaime Calatayud</p>
             <p><strong>Country:</strong> Spain</p>
             <p><strong>Address:</strong> Ronda del Malecó 22, 46240 Carlet, Valencia, Spain</p>
-            <p><strong>Email:</strong> calatayudjaime@gmail.com</p>
-            <p><strong>Website:</strong> https://calatayudjaime.github.io/subsly-privacy</p>
+            <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5b383a373a2f3a222e3f313a32363e1b3c363a323775383436">[email&#160;protected]</a></p>
+            <p><strong>Website:</strong> https://calatayudjaime.github.io/subsfly-privacy</p>
         </div>
-        
-        <h2>3. Your Data on Your Device</h2>
-        
+        <h2>3. Data We Process Locally</h2>
         <h3>3.1 Everything is Local</h3>
-        <p>Subsly processes the following types of information <strong>exclusively on your device</strong>:</p>
+        <p>SubsFly processes the following types of information <strong>exclusively on your device</strong>:</p>
         <ul>
             <li><strong>Subscriptions:</strong> Names, amounts, renewal dates, and categories</li>
-            <li><strong>Private notes:</strong> Text and annotations protected with Face ID</li>
+            <li><strong>Private notes:</strong> Texts and annotations protected with Face ID</li>
             <li><strong>Images:</strong> Photos to customize categories</li>
-            <li><strong>Preferences:</strong> Settings and custom configurations</li>
+            <li><strong>Preferences:</strong> Custom settings and adjustments</li>
         </ul>
-        
         <div class="highlight-box">
-            <p><strong>⚠️ Important:</strong> None of this data is transmitted to external servers, cloud services, or third parties. Everything stays on your iPhone/iPad.</p>
+            <p><strong>⚠️ Important:</strong> All this information is stored exclusively on your device using Core Data. It is never transmitted to external servers, cloud services, or third parties (except for the specific connections described in section 4).</p>
         </div>
-        
-        <h3>3.2 Zero Collection</h3>
-        <p>According to Apple's guidelines:</p>
-        <ul>
-            <li><span class="emoji-large">❌</span>We don't collect personal information</li>
-            <li><span class="emoji-large">❌</span>We don't use analytics</li>
-            <li><span class="emoji-large">❌</span>No advertising tracking</li>
-            <li><span class="emoji-large">❌</span>We don't create profiles</li>
-            <li><span class="emoji-large">❌</span>No account or login required</li>
-        </ul>
-        
         <div class="divider"></div>
-        
-        <h2>4. System Permissions</h2>
-        
+        <h2>4. Internet Connections and External APIs</h2>
+        <div class="key-summary">
+            <h3>📡 Internet Connection</h3>
+            <p>SubsFly <strong>ONLY</strong> connects to the internet for the two specific features described below. <strong>There is no other external communication</strong>, tracking, analytics, or data transmission.</p>
+        </div>
+        <p>SubsFly makes occasional internet connections only for the following optional features:</p>
+        <div class="api-box">
+            <h3><span class="emoji-large">💱</span>Real-Time Currency Conversion</h3>
+            <ul>
+                <li><strong>What information is sent:</strong> Only the base currency code (e.g., EUR, USD, GBP)</li>
+                <li><strong>Where it's sent:</strong> ExchangeRate-API (<code>api.exchangerate.host</code>)</li>
+                <li><strong>URL used:</strong> <code>https://api.exchangerate.host/latest?base=[CURRENCY]</code></li>
+                <li><strong>What we receive:</strong> Updated exchange rates</li>
+                <li><strong>Personal data shared:</strong> NONE. No information about your subscriptions, prices, amounts, or personal data is sent</li>
+                <li><strong>When it happens:</strong> Only when the app needs to update rates (maximum once every 24 hours)</li>
+                <li><strong>Storage:</strong> Rates are saved locally to work offline</li>
+            </ul>
+        </div>
+        <div class="api-box">
+            <h3><span class="emoji-large">🎨</span>Platform Logos</h3>
+            <ul>
+                <li><strong>What information is sent:</strong> Only the web domain of the platform (e.g., "netflix.com", "spotify.com")</li>
+                <li><strong>Where it's sent:</strong> Google Favicon API (<code>www.google.com</code>)</li>
+                <li><strong>URL used:</strong> <code>https://www.google.com/[domain]</code></li>
+                <li><strong>What we receive:</strong> The official logo image in PNG format</li>
+                <li><strong>Personal data shared:</strong> NONE. Only the public domain name</li>
+                <li><strong>When it happens:</strong> Only when viewing a subscription without a downloaded logo</li>
+                <li><strong>Storage:</strong> The logo is saved locally and reused without downloading again</li>
+                <li><strong>Offline functionality:</strong> Once downloaded, available without connection</li>
+            </ul>
+        </div>
+        <div class="highlight-box">
+            <p><strong>🔒 Privacy Guarantee:</strong></p>
+            <ul>
+                <li>These APIs <strong>DO NOT receive</strong> information about your subscription prices</li>
+                <li><strong>DO NOT receive</strong> renewal dates or any personal data</li>
+                <li><strong>DO NOT receive</strong> your device identifiers</li>
+                <li><strong>We DO NOT track</strong> your searches</li>
+                <li>Connections are occasional and only when you initiate the action</li>
+            </ul>
+        </div>
+        <div class="divider"></div>
+        <h2>5. System Permissions</h2>
         <h3>📸 Photo Access</h3>
         <div class="highlight-box">
             <p><strong>Purpose:</strong> Customize categories with your images</p>
             <p><strong>How it works:</strong> Images are processed locally</p>
-            <p><strong>Control:</strong> Settings > Subsly > Photos</p>
+            <p><strong>Control:</strong> Settings > SubsFly > Photos</p>
         </div>
-        
         <h3>🔐 Face ID / Touch ID</h3>
         <div class="highlight-box">
             <p><strong>Purpose:</strong> Protect your private notes</p>
             <p><strong>How it works:</strong> iOS manages biometric data</p>
             <p><strong>Security:</strong> Your fingerprint never leaves the Secure Enclave</p>
         </div>
-        
-        <h2>5. Maximum Security</h2>
+        <h3>🔔 Notifications</h3>
+        <div class="highlight-box">
+            <p><strong>Purpose:</strong> Remind you of subscription renewals</p>
+            <p><strong>How it works:</strong> Local notifications managed by iOS</p>
+            <p><strong>Control:</strong> Settings > Notifications > SubsFly</p>
+        </div>
+        <h2>6. Maximum Security</h2>
         <p>We implement multiple layers of protection:</p>
         <ul>
-            <li><strong>AES-256 Encryption:</strong> Sensitive data encrypted at rest</li>
-            <li><strong>iOS Keychain:</strong> Secure key management</li>
-            <li><strong>Biometrics:</strong> Additional protection for notes</li>
-            <li><strong>iOS Sandbox:</strong> Total isolation from other apps</li>
-            <li><strong>No Internet:</strong> Zero remote attack vectors</li>
+            <li><strong>🔒 Encrypted Local Storage:</strong> Core Data with iOS system encryption</li>
+            <li><strong>🔐 Biometric Protection:</strong> Face ID/Touch ID for sensitive notes</li>
+            <li><strong>📱 iOS Sandbox:</strong> Complete isolation within Apple's sandbox</li>
+            <li><strong>🚫 No Servers:</strong> We have no servers that can be compromised</li>
+            <li><strong>🛡️ HTTPS Connections:</strong> API requests use HTTPS encryption</li>
         </ul>
-        
         <div class="divider"></div>
-        
-        <h2>6. Complete Control of Your Data</h2>
-        
+        <h2>7. Full Control of Your Data</h2>
         <h3>Retention</h3>
-        <p>Your data remains on your device as long as you have Subsly installed.</p>
-        
+        <p>Your data remains on your device while you have SubsFly installed.</p>
         <h3>Deletion</h3>
         <ul>
             <li><strong>Selective:</strong> Delete individual items in the app</li>
-            <li><strong>Complete:</strong> Settings > "Delete All Data"</li>
-            <li><strong>Uninstall:</strong> iOS automatically deletes everything</li>
+            <li><strong>Complete:</strong> Uninstall the app to delete all data</li>
+            <li><strong>Backups:</strong> If you use iCloud Backup, iOS may include the data (controlled by Apple)</li>
         </ul>
-        
-        <h2>7. Legal Basis (GDPR)</h2>
+        <h2>8. Legal Basis (GDPR)</h2>
         <p>For EU users, processing is based on:</p>
         <ul>
-            <li><strong>Performance:</strong> Providing requested functions</li>
-            <li><strong>Consent:</strong> For system permissions</li>
+            <li><strong>Contract execution:</strong> Processing your subscriptions is necessary for the app to function</li>
+            <li><strong>Consent:</strong> For system permissions (photos, notifications, Face ID)</li>
+            <li><strong>Legitimate interest:</strong> For currency conversion and logos that improve your experience</li>
         </ul>
-        
-        <h2>8. Your Rights</h2>
+        <h2>9. Your Rights</h2>
         <p>Although data is local, we respect your rights:</p>
         <ul>
-            <li><strong>Access:</strong> View all your data in the app</li>
-            <li><strong>Rectification:</strong> Edit whenever you want</li>
-            <li><strong>Erasure:</strong> Delete individually or completely</li>
-            <li><strong>Portability:</strong> Export (coming soon)</li>
-            <li><strong>Opposition:</strong> Disable permissions or uninstall</li>
+            <li><strong>✅ Access:</strong> View all your data in the app</li>
+            <li><strong>✏️ Rectification:</strong> Edit whenever you want</li>
+            <li><strong>🗑️ Erasure:</strong> Delete individually or completely</li>
+            <li><strong>📤 Portability:</strong> Export (coming soon)</li>
+            <li><strong>⛔ Objection:</strong> Disable permissions or uninstall</li>
         </ul>
-        
-        <p>To exercise these rights, contact: calatayudjaime@gmail.com</p>
-        
+        <p>To exercise these rights, contact: <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb989a979a8f9a828e9f919a92969ebb9c969a9297d5989496">[email&#160;protected]</a></strong></p>
         <div class="divider"></div>
-        
-        <h2>9. No International Transfers</h2>
-        <p>There are no data transfers because all information remains exclusively on your device. No servers, no clouds, no third parties.</p>
-        
-        <h2>10. Children's Privacy</h2>
-        <p>Subsly is rated 4+ on the App Store. We don't collect information from minors. If you're a parent/guardian with concerns, please contact us.</p>
-        
-        <h2>11. Support</h2>
+        <h2>10. International Transfers</h2>
+        <p>The only data transfers that occur are:</p>
+        <ul>
+            <li><strong>Currency conversion APIs:</strong> Providers may be located outside the EU. We only send currency codes (no personal data)</li>
+            <li><strong>Logo APIs:</strong> Providers may be located outside the EU. We only send public platform names (no personal data)</li>
+        </ul>
+        <p><strong>Your subscription data, prices, dates, and notes NEVER leave your device.</strong></p>
+        <h2>11. Minors</h2>
+        <p>SubsFly is rated <strong>4+</strong> in the App Store. We do not collect information from minors. If you are a parent/guardian with concerns, contact us.</p>
+        <h2>12. Third-Party Services</h2>
+        <h3>APIs Used</h3>
+        <ul>
+            <li><strong>ExchangeRate-API (api.exchangerate.host):</strong> For currency conversion rates. We only send currency code</li>
+            <li><strong>Google Favicon API (www.google.com):</strong> For official platform logos. We only send public domain</li>
+        </ul>
+        <p>These services have their own privacy policies:</p>
+        <ul>
+            <li>ExchangeRate-API: https://exchangerate.host/</li>
+            <li>Clearbit: https://clearbit.com/privacy</li>
+        </ul>
+        <h3>StoreKit (In-App Purchases)</h3>
+        <ul>
+            <li>Premium subscriptions are managed through Apple StoreKit</li>
+            <li>Apple processes payment information according to its privacy policy</li>
+            <li>SubsFly only receives confirmation of active subscription (no payment data)</li>
+        </ul>
+        <h2>13. Support</h2>
         <p>If you contact us for support:</p>
         <ul>
             <li>We use your email only to respond</li>
-            <li>We delete conversations after 90 days</li>
             <li>We don't share with third parties</li>
             <li>You can request immediate deletion</li>
         </ul>
-        
-        <h2>12. Updates</h2>
+        <h2>14. Updates</h2>
         <p>Changes will be reflected in:</p>
         <ul>
-            <li>The update date</li>
-            <li>In-app notification (major changes)</li>
-            <li>This permanent URL</li>
+            <li>This web page with the new update date</li>
+            <li>In-app notification if there are important changes</li>
+            <li>We recommend reviewing this policy periodically</li>
         </ul>
-        
-        <h2>13. App Store Compliance</h2>
-        <p>We comply with:</p>
-        <ul>
-            <li>App Store Review Guidelines (5.1)</li>
-            <li>iOS App Privacy Requirements</li>
-            <li>Privacy Labels ("No Data Collected")</li>
-        </ul>
-        
+        <h2>15. Legal Compliance</h2>
+        <p>SubsFly complies with:</p>
+        <div style="margin-top: 15px;">
+            <span class="badge badge-pink">GDPR</span>
+            <span class="badge badge-green">LOPDGDD</span>
+            <span class="badge badge-blue">App Store Guidelines</span>
+        </div>
         <div class="contact-card">
             <h3>📬 Contact</h3>
-            <p>Privacy questions?</p>
-            <p>📧 <a href="mailto:calatayudjaime@gmail.com">calatayudjaime@gmail.com</a></p>
-            <p>🌐 <a href="https://calatayudjaime.github.io/subsly-privacy">Privacy Policy</a></p>
-            <p>📍 Ronda del Malecó 22, 46240 Carlet, Valencia, Spain</p>
-        </div>
-        
-        <div class="footer">
-            <div class="footer-logo">SUBSLY</div>
-            <div class="footer-tagline">100% Offline • 100% Private • 100% Yours</div>
-            <div class="footer-copyright">© 2025 Subsly App. All rights reserved.</div>
-        </div>
-    </div>
-</body>
-</html>
+            <p>Questions about privacy?</p>
+            <p>📧 <a href="/cdn-cgi/l/email-protection#94f7f5f8f5e0f5ede1f0fef5fdf9f1d4f3f9f5fdf8baf7fbf9"><span class="__cf_email__" data-cfemail="caa9aba6abbeabb3bfaea0aba3a7af8aada7aba3a6e4a9a5a7">[email&#160;protected]</span></a></p>
+            <p>🌐 <a href="https://calatayudjaime.github.io/subsfly-privacy">Privacy Policy</a><
