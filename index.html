@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Subsly</title>
+    <title>Política de Privacidad - SubsFly</title>
     <style>
         * {
             margin: 0;
@@ -58,6 +58,57 @@
             background: #ffffff;
         }
         
+        h1 {
+            font-size: 36px;
+            color: #1a1a1a;
+            margin: 40px 0 20px;
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: 26px;
+            color: #FF3366;
+            margin: 40px 0 20px;
+            font-weight: 700;
+            border-bottom: 3px solid rgba(255,51,102,0.2);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 20px;
+            color: #4a4a4a;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin: 15px 0;
+            color: #4a4a4a;
+            font-size: 16px;
+        }
+        
+        ul {
+            margin: 15px 0 15px 20px;
+            color: #4a4a4a;
+        }
+        
+        li {
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+        
+        a {
+            color: #FF3366;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #D946EF;
+            text-decoration: underline;
+        }
+        
         .metadata-card {
             background: linear-gradient(135deg, #f8f9ff, #fff5f8);
             border: 2px solid rgba(255,51,102,0.1);
@@ -100,91 +151,28 @@
         .key-summary p {
             color: rgba(255,255,255,0.95);
             font-size: 16px;
-            line-height: 1.6;
-        }
-        
-        h1 {
-            font-size: 36px;
-            font-weight: 800;
-            margin: 40px 0 30px;
-            background: linear-gradient(90deg, #FF3366, #00F5A0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        h2 {
-            font-size: 28px;
-            font-weight: 700;
-            margin: 40px 0 20px;
-            color: #1a1a1a;
-            position: relative;
-            padding-left: 20px;
-        }
-        
-        h2::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(180deg, #FF3366, #00F5A0);
-            border-radius: 2px;
-        }
-        
-        h3 {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 25px 0 15px;
-            color: #00B4D8;
-        }
-        
-        p {
-            margin-bottom: 18px;
-            color: #4a4a4a;
-            font-size: 16px;
-        }
-        
-        ul {
-            margin: 20px 0;
-            padding-left: 0;
-            list-style: none;
-        }
-        
-        ul li {
-            margin: 12px 0;
-            padding-left: 35px;
-            position: relative;
-            color: #4a4a4a;
-            font-size: 16px;
-        }
-        
-        ul li::before {
-            content: "→";
-            position: absolute;
-            left: 10px;
-            color: #00F5A0;
-            font-weight: bold;
-        }
-        
-        ul li strong {
-            color: #FF3366;
         }
         
         .highlight-box {
-            background: #f8f9ff;
+            background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(0,245,160,0.08));
             border-left: 4px solid #00F5A0;
             border-radius: 10px;
             padding: 20px;
-            margin: 25px 0;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            margin: 20px 0;
         }
         
-        .highlight-box strong {
-            color: #FF3366;
-            font-size: 18px;
+        .api-box {
+            background: linear-gradient(135deg, rgba(255,51,102,0.05), rgba(217,70,239,0.05));
+            border: 2px solid rgba(255,51,102,0.2);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .api-box h3 {
+            color: #00B4D8;
+            margin-top: 0;
         }
         
         .contact-card {
@@ -282,6 +270,15 @@
             margin-right: 8px;
         }
         
+        code {
+            background: rgba(0,212,255,0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 14px;
+            color: #00B4D8;
+        }
+        
         @media (max-width: 768px) {
             .logo-text {
                 font-size: 36px;
@@ -325,7 +322,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo-text">SUBSLY</div>
+        <div class="logo-text">SUBSFLY</div>
         <div class="subtitle">Tu Gestor de Suscripciones</div>
     </div>
     
@@ -333,25 +330,25 @@
         <h1>Política de Privacidad</h1>
         
         <div class="metadata-card">
-            <p><strong>Última actualización:</strong> 12 de septiembre de 2025</p>
-            <p><strong>Versión:</strong> 1.0</p>
-            <p><strong>Aplicación:</strong> Subsly - Gestión Inteligente de Suscripciones</p>
+            <p><strong>Última actualización:</strong> 12 de Noviembre de 2025</p>
+            <p><strong>Versión:</strong> 2.1</p>
+            <p><strong>Aplicación:</strong> SubsFly - Gestión Inteligente de Suscripciones</p>
             <div style="margin-top: 15px;">
-                <span class="badge badge-pink">100% Offline</span>
+                <span class="badge badge-pink">Privacidad Local</span>
                 <span class="badge badge-green">Sin Tracking</span>
-                <span class="badge badge-blue">Cifrado AES-256</span>
+                <span class="badge badge-blue">Cifrado iOS</span>
             </div>
         </div>
         
         <div class="key-summary">
             <h3>💡 Lo más importante</h3>
-            <p>Subsly funciona completamente offline. Tus datos NUNCA salen de tu dispositivo. No recopilamos, almacenamos ni compartimos ninguna información personal. Tu privacidad es nuestra prioridad absoluta.</p>
+            <p>SubsFly está diseñada con privacidad desde el diseño: todos tus datos de suscripciones, categorías y notas permanecen exclusivamente almacenados en tu dispositivo. Solo realizamos conexiones puntuales a internet para funcionalidades específicas que tú controlas.</p>
         </div>
         
         <h2>1. Introducción</h2>
-        <p>Esta Política de Privacidad describe cómo Subsly ("la Aplicación", "nosotros") gestiona la información cuando utilizas nuestra aplicación de gestión de suscripciones. Subsly está diseñada con un enfoque de privacidad total: funciona completamente offline y todos tus datos permanecen exclusivamente en tu dispositivo.</p>
+        <p>Esta Política de Privacidad describe cómo SubsFly ("la Aplicación", "nosotros") gestiona la información cuando utilizas nuestra aplicación de gestión de suscripciones.</p>
         
-        <p>Al utilizar Subsly, aceptas las prácticas descritas en esta política. Si no estás de acuerdo, te recomendamos no utilizar la aplicación.</p>
+        <p>Al utilizar SubsFly, aceptas las prácticas descritas en esta política. Si no estás de acuerdo, te recomendamos no utilizar la aplicación.</p>
         
         <div class="divider"></div>
         
@@ -361,13 +358,13 @@
             <p><strong>País:</strong> España</p>
             <p><strong>Dirección:</strong> Ronda del Malecó 22, 46240 Carlet, Valencia, España</p>
             <p><strong>Email:</strong> calatayudjaime@gmail.com</p>
-            <p><strong>Web:</strong> https://calatayudjaime.github.io/subsly-privacy</p>
+            <p><strong>Web:</strong> https://calatayudjaime.github.io/subsfly-privacy</p>
         </div>
         
-        <h2>3. Tus Datos en Tu Dispositivo</h2>
+        <h2>3. Datos que Procesamos Localmente</h2>
         
         <h3>3.1 Todo es Local</h3>
-        <p>Subsly procesa los siguientes tipos de información <strong>exclusivamente en tu dispositivo</strong>:</p>
+        <p>SubsFly procesa los siguientes tipos de información <strong>exclusivamente en tu dispositivo</strong>:</p>
         <ul>
             <li><strong>Suscripciones:</strong> Nombres, importes, fechas de renovación y categorías</li>
             <li><strong>Notas privadas:</strong> Textos y anotaciones protegidas con Face ID</li>
@@ -376,28 +373,69 @@
         </ul>
         
         <div class="highlight-box">
-            <p><strong>⚠️ Importante:</strong> Ninguno de estos datos se transmite a servidores externos, servicios en la nube o terceros. Todo permanece en tu iPhone/iPad.</p>
+            <p><strong>⚠️ Importante:</strong> Toda esta información se almacena exclusivamente en tu dispositivo usando Core Data. Nunca se transmite a servidores externos, servicios en la nube o terceros (excepto las conexiones específicas descritas en la sección 4).</p>
         </div>
-        
-        <h3>3.2 Cero Recopilación</h3>
-        <p>Conforme a las directrices de Apple:</p>
-        <ul>
-            <li><span class="emoji-large">❌</span>No recopilamos información personal</li>
-            <li><span class="emoji-large">❌</span>No utilizamos analítica</li>
-            <li><span class="emoji-large">❌</span>No hay tracking publicitario</li>
-            <li><span class="emoji-large">❌</span>No creamos perfiles</li>
-            <li><span class="emoji-large">❌</span>No requiere cuenta ni login</li>
-        </ul>
         
         <div class="divider"></div>
         
-        <h2>4. Permisos del Sistema</h2>
+        <h2>4. Conexiones a Internet y APIs Externas</h2>
+        
+        <div class="key-summary">
+            <h3>📡 Conexión a Internet</h3>
+            <p>SubsFly <strong>SOLO</strong> se conecta a internet para las dos funcionalidades específicas descritas a continuación. <strong>No hay ninguna otra comunicación externa</strong>, seguimiento, analytics ni transmisión de datos.</p>
+        </div>
+        
+        <p>SubsFly realiza conexiones puntuales a internet únicamente para las siguientes funcionalidades opcionales:</p>
+        
+        <div class="api-box">
+            <h3><span class="emoji-large">💱</span>Conversión de Divisas en Tiempo Real</h3>
+            <ul>
+                <li><strong>Qué información se envía:</strong> Únicamente el código de moneda base (ej: EUR, USD, GBP)</li>
+                <li><strong>A dónde se envía:</strong> ExchangeRate-API (<code>api.exchangerate.host</code>)</li>
+                <li><strong>URL utilizada:</strong> <code>https://api.exchangerate.host/latest?base=[MONEDA]</code></li>
+                <li><strong>Qué recibimos:</strong> Tasas de conversión actualizadas</li>
+                <li><strong>Datos personales compartidos:</strong> NINGUNO. No se envía información sobre tus suscripciones, precios, cantidades ni ningún dato personal</li>
+                <li><strong>Cuándo ocurre:</strong> Solo cuando la app necesita actualizar las tasas (máximo una vez cada 24 horas)</li>
+                <li><strong>Almacenamiento:</strong> Las tasas se guardan localmente para funcionar sin conexión</li>
+            </ul>
+        </div>
+        
+        <div class="api-box">
+            <h3><span class="emoji-large">🎨</span>Logos de Plataformas - Google Favicon API</h3>
+            <ul>
+                <li><strong>Qué información se envía:</strong> Únicamente el dominio web de la plataforma (ej: "netflix.com", "spotify.com") y tu dirección IP</li>
+                <li><strong>A dónde se envía:</strong> Google Favicon API (<code>www.google.com</code>)</li>
+                <li><strong>URL utilizada:</strong> <code>https://www.google.com/s2/favicons?domain=[dominio]&sz=256</code></li>
+                <li><strong>Qué recibimos:</strong> La imagen del logo oficial de la plataforma en formato PNG</li>
+                <li><strong>Datos personales compartidos:</strong> Solo el nombre público del dominio y tu dirección IP (gestionada por Google)</li>
+                <li><strong>Cuándo ocurre:</strong> Solo cuando visualizas una suscripción sin logo descargado previamente</li>
+                <li><strong>Almacenamiento:</strong> El logo se guarda localmente en caché y se reutiliza sin descargarlo nuevamente</li>
+                <li><strong>Funcionamiento offline:</strong> Una vez descargado, disponible sin conexión indefinidamente</li>
+                <li><strong>Política de privacidad de Google:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            </ul>
+        </div>
+        
+        <div class="highlight-box">
+            <p><strong>🔒 Garantía de Privacidad:</strong></p>
+            <ul>
+                <li>Estas APIs <strong>NO reciben</strong> información sobre el precio de tus suscripciones</li>
+                <li><strong>NO reciben</strong> fechas de renovación ni ningún dato personal identificable</li>
+                <li><strong>NO reciben</strong> identificadores únicos de tu dispositivo (excepto IP estándar)</li>
+                <li><strong>NO realizamos</strong> seguimiento ni análisis de tus búsquedas</li>
+                <li>Las conexiones son puntuales y solo cuando tú inicias la acción de visualizar una suscripción</li>
+                <li>Los logos descargados se cachean localmente para minimizar futuras peticiones</li>
+            </ul>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <h2>5. Permisos del Sistema</h2>
         
         <h3>📸 Acceso a Fotos</h3>
         <div class="highlight-box">
             <p><strong>Para qué:</strong> Personalizar categorías con tus imágenes</p>
             <p><strong>Cómo funciona:</strong> Las imágenes se procesan localmente</p>
-            <p><strong>Control:</strong> Ajustes > Subsly > Fotos</p>
+            <p><strong>Control:</strong> Ajustes > SubsFly > Fotos</p>
         </div>
         
         <h3>🔐 Face ID / Touch ID</h3>
@@ -407,94 +445,125 @@
             <p><strong>Seguridad:</strong> Tu huella nunca sale del Secure Enclave</p>
         </div>
         
-        <h2>5. Seguridad Máxima</h2>
+        <h3>🔔 Notificaciones</h3>
+        <div class="highlight-box">
+            <p><strong>Para qué:</strong> Recordarte las renovaciones de suscripciones</p>
+            <p><strong>Cómo funciona:</strong> Notificaciones locales gestionadas por iOS</p>
+            <p><strong>Control:</strong> Ajustes > Notificaciones > SubsFly</p>
+        </div>
+        
+        <h2>6. Seguridad Máxima</h2>
         <p>Implementamos múltiples capas de protección:</p>
         <ul>
-            <li><strong>Cifrado AES-256:</strong> Datos sensibles cifrados en reposo</li>
-            <li><strong>iOS Keychain:</strong> Gestión segura de claves</li>
-            <li><strong>Biometría:</strong> Protección adicional para notas</li>
-            <li><strong>Sandbox iOS:</strong> Aislamiento total de otras apps</li>
-            <li><strong>Sin Internet:</strong> Cero vectores de ataque remoto</li>
+            <li><strong>🔒 Almacenamiento Local Cifrado:</strong> Core Data con cifrado del sistema iOS</li>
+            <li><strong>🔐 Protección Biométrica:</strong> Face ID/Touch ID para notas sensibles</li>
+            <li><strong>📱 Sandbox iOS:</strong> Aislamiento total dentro del sandbox de Apple</li>
+            <li><strong>🚫 Sin Servidores Propios:</strong> No tenemos servidores que puedan ser vulnerados</li>
+            <li><strong>🛡️ Conexiones HTTPS:</strong> Las peticiones a APIs externas usan cifrado HTTPS</li>
         </ul>
         
         <div class="divider"></div>
         
-        <h2>6. Control Total de Tus Datos</h2>
+        <h2>7. Control Total de Tus Datos</h2>
         
         <h3>Conservación</h3>
-        <p>Tus datos permanecen en tu dispositivo mientras tengas Subsly instalada.</p>
+        <p>Tus datos permanecen en tu dispositivo mientras tengas SubsFly instalada.</p>
         
         <h3>Eliminación</h3>
         <ul>
             <li><strong>Selectiva:</strong> Borra items individuales en la app</li>
-            <li><strong>Completa:</strong> Ajustes > "Borrar todos los datos"</li>
-            <li><strong>Desinstalación:</strong> iOS elimina todo automáticamente</li>
+            <li><strong>Completa:</strong> Desinstala la app para eliminar todos los datos</li>
+            <li><strong>Copias de seguridad:</strong> Si usas iCloud Backup, iOS puede incluir los datos (controlado por Apple)</li>
         </ul>
         
-        <h2>7. Base Legal (RGPD)</h2>
+        <h2>8. Base Legal (GDPR)</h2>
         <p>Para usuarios en la UE, el procesamiento se basa en:</p>
         <ul>
-            <li><strong>Ejecución:</strong> Proporcionar las funciones solicitadas</li>
-            <li><strong>Consentimiento:</strong> Para permisos del sistema</li>
+            <li><strong>Ejecución del contrato:</strong> Procesar tus suscripciones es necesario para que la app funcione</li>
+            <li><strong>Consentimiento:</strong> Para permisos del sistema (fotos, notificaciones, Face ID)</li>
+            <li><strong>Interés legítimo:</strong> Para conversión de divisas y logos que mejoran tu experiencia</li>
         </ul>
         
-        <h2>8. Tus Derechos</h2>
+        <h2>9. Tus Derechos</h2>
         <p>Aunque los datos son locales, respetamos tus derechos:</p>
         <ul>
-            <li><strong>Acceso:</strong> Ve todos tus datos en la app</li>
-            <li><strong>Rectificación:</strong> Edita cuando quieras</li>
-            <li><strong>Supresión:</strong> Borra individual o totalmente</li>
-            <li><strong>Portabilidad:</strong> Exportación (próximamente)</li>
-            <li><strong>Oposición:</strong> Desactiva permisos o desinstala</li>
+            <li><strong>✅ Acceso:</strong> Ve todos tus datos en la app</li>
+            <li><strong>✏️ Rectificación:</strong> Edita cuando quieras</li>
+            <li><strong>🗑️ Supresión:</strong> Borra individual o totalmente</li>
+            <li><strong>📤 Portabilidad:</strong> Exportación (próximamente)</li>
+            <li><strong>⛔ Oposición:</strong> Desactiva permisos o desinstala</li>
         </ul>
         
-        <p>Para ejercer estos derechos, contacta: calatayudjaime@gmail.com</p>
+        <p>Para ejercer estos derechos, contacta: <strong>calatayudjaime@gmail.com</strong></p>
         
         <div class="divider"></div>
         
-        <h2>9. Sin Transferencias Internacionales</h2>
-        <p>No existen transferencias de datos porque toda la información permanece exclusivamente en tu dispositivo. Sin servidores, sin nubes, sin terceros.</p>
+        <h2>10. Transferencias Internacionales</h2>
+        <p>Las únicas transferencias de datos que ocurren son:</p>
+        <ul>
+            <li><strong>APIs de conversión de divisas:</strong> Proveedores pueden estar fuera de la UE. Solo enviamos códigos de moneda (sin datos personales)</li>
+            <li><strong>Google Favicon API:</strong> Google puede estar fuera de la UE. Solo enviamos nombres públicos de dominios y tu dirección IP estándar. Google está sujeto a sus propios acuerdos de transferencia de datos bajo el Marco de Privacidad de Datos UE-EE.UU.</li>
+        </ul>
+        <p><strong>Tus datos de suscripciones, precios, fechas y notas NUNCA salen de tu dispositivo.</strong></p>
         
-        <h2>10. Menores de Edad</h2>
-        <p>Subsly está clasificada como 4+ en App Store. No recopilamos información de menores. Si eres padre/tutor y tienes preocupaciones, contáctanos.</p>
+        <h2>11. Menores de Edad</h2>
+        <p>SubsFly está clasificada como <strong>4+</strong> en App Store. No recopilamos información de menores. Si eres padre/tutor y tienes preocupaciones, contáctanos.</p>
         
-        <h2>11. Soporte</h2>
+        <h2>12. Servicios de Terceros</h2>
+        <h3>APIs Utilizadas</h3>
+        <ul>
+            <li><strong>ExchangeRate-API (api.exchangerate.host):</strong> Para tasas de conversión de divisas. Solo enviamos código de moneda</li>
+            <li><strong>Google Favicon API (www.google.com):</strong> Para logos oficiales de plataformas. Solo enviamos dominio público y se registra tu IP</li>
+        </ul>
+        <p>Estos servicios tienen sus propias políticas de privacidad:</p>
+        <ul>
+            <li>ExchangeRate-API: <a href="https://exchangerate.host/" target="_blank">https://exchangerate.host/</a></li>
+            <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        </ul>
+        
+        <h3>StoreKit (Compras In-App)</h3>
+        <ul>
+            <li>Las suscripciones premium se gestionan a través de Apple StoreKit</li>
+            <li>Apple procesa la información de pago según su política de privacidad</li>
+            <li>SubsFly solo recibe confirmación de suscripción activa (sin datos de pago)</li>
+        </ul>
+        
+        <h2>13. Soporte</h2>
         <p>Si nos contactas para soporte:</p>
         <ul>
             <li>Usamos tu email solo para responderte</li>
-            <li>Eliminamos conversaciones tras 90 días</li>
             <li>No compartimos con terceros</li>
             <li>Puedes pedir eliminación inmediata</li>
         </ul>
         
-        <h2>12. Actualizaciones</h2>
+        <h2>14. Actualizaciones</h2>
         <p>Los cambios se reflejarán en:</p>
         <ul>
-            <li>La fecha de actualización</li>
-            <li>Notificación in-app (cambios importantes)</li>
-            <li>Esta URL permanente</li>
+            <li>Esta página web con la nueva fecha de actualización</li>
+            <li>Notificación in-app si hay cambios importantes</li>
+            <li>Te recomendamos revisar esta política periódicamente</li>
         </ul>
         
-        <h2>13. Conformidad App Store</h2>
-        <p>Cumplimos con:</p>
-        <ul>
-            <li>App Store Review Guidelines (5.1)</li>
-            <li>iOS App Privacy Requirements</li>
-            <li>Privacy Labels ("No Data Collected")</li>
-        </ul>
+        <h2>15. Cumplimiento Legal</h2>
+        <p>SubsFly cumple con:</p>
+        <div style="margin-top: 15px;">
+            <span class="badge badge-pink">GDPR</span>
+            <span class="badge badge-green">LOPDGDD</span>
+            <span class="badge badge-blue">App Store Guidelines</span>
+        </div>
         
         <div class="contact-card">
             <h3>📬 Contacto</h3>
             <p>¿Preguntas sobre privacidad?</p>
             <p>📧 <a href="mailto:calatayudjaime@gmail.com">calatayudjaime@gmail.com</a></p>
-            <p>🌐 <a href="https://calatayudjaime.github.io/subsly-privacy">Política de Privacidad</a></p>
+            <p>🌐 <a href="https://calatayudjaime.github.io/subsfly-privacy">Política de Privacidad</a></p>
             <p>📍 Ronda del Malecó 22, 46240 Carlet, Valencia, España</p>
         </div>
         
         <div class="footer">
-            <div class="footer-logo">SUBSLY</div>
-            <div class="footer-tagline">100% Offline • 100% Privado • 100% Tuyo</div>
-            <div class="footer-copyright">© 2025 Subsly App. Todos los derechos reservados.</div>
+            <div class="footer-logo">SUBSFLY</div>
+            <div class="footer-tagline">Control Total de tus Suscripciones</div>
+            <div class="footer-copyright">© 2025 Jaime Calatayud. Todos los derechos reservados.</div>
         </div>
     </div>
 </body>
